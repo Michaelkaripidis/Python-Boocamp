@@ -1,0 +1,27 @@
+.flex-container {
+    flex-direction: row;
+    display:flex;   
+    align-items:center;
+    color:white;
+    border: solid orange;
+    width: 350px;
+}
+
+.block {
+    background-color: plum;
+    height:20px;
+    width: 60px;
+    margin: 10px 0;
+}
+.block1 {
+    background-color:powderblue;
+    height: 20px;
+    width: 110px;
+    margin: 10px 0;
+    
+}
+.cat {
+    background-color: red;
+    height: 20px;
+    width: 110px;
+}

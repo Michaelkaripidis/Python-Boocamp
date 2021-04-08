@@ -1,0 +1,22 @@
+.flex-container {
+    flex-direction: column;
+    display:flex;
+    background-color: white;
+    align-items:center;
+    border:1px solid red;
+}
+
+
+.block {
+    background-color: blue;
+    margin: 10px 0;
+    height: 150px;
+    width: 100%;
+}
+
+.cat {
+    width: 20%;
+}
+.dog {
+    background-color: blue;
+}
