@@ -39,17 +39,20 @@ sfsfsdsdfs
 
 // let myList = [user1, user2, "Marcelo"];
 
-let colors = ["blue", "yellow", "green", [13,26,52]]
+let colors = ["blue", "yellow", "green", "orange", "dark-brown"]
+console.log(colors);
 
-let favorite = colors[0];
-let secondFavorite = colors [2]
-let secondFavorite = colors[1] // Yellow;
+colors.splice(2, 2)
 
-colors[1] = "red"
+// let favorite = colors[0];
+// let secondFavorite = colors [2]
+// let secondFavorite = colors[1] // Yellow;
 
-colors.push("purple:");
+// colors[1] = "red"
 
-// console.log(favorite); // blue
+// colors.push("purple:");
+
+// console.log(favorite); // blu
 // console.log(secondFavorite); // green
 // console.log(thirdFavorite); // red
-console.log(colors); 
+// console.log(colors); 
