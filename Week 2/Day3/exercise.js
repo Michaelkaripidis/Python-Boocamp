@@ -71,8 +71,78 @@
 // Prompt the user for a number, while the number is smaller than 10 continue asking the user for a new number.
 // Tip : Which while loop is more relevant for this situation?
 // Hint : Check the data type you receive from the prompt (ie. typeof method)
- var i = prompt("Choose a number!")
- while (i < 10) {
-     i = prompt ("Choose another number");
-     i++
- }
+//  var i = prompt("Choose a number!")
+//  while (i < 10) {
+//      i = prompt ("Choose another number");
+//      i++
+//  }
+
+
+//  Given the object above where the key is the students name and the value is the country they are from.
+
+// Prompt the student for their name :
+// If the name is in the object, console.log the name of the student and the country they come from.
+// example: "Hi! I'm [name], and I'm from [country]."
+// Hint: Look up the statement if ... in
+// If the name is not in the object, console.log: "Hi! I'm a guest."
+// 
+// let guestList = {
+//     randy: "Germany",
+//     karla: "France",
+//     wendy: "Japan",
+//     norman: "England",
+//     sam: "Argentina"
+//   }
+// var Name = prompt("What is your name?");
+
+// if (Name in guestList) {
+//     for (let i in guestList) {
+//         if (i == Name) {
+//             console.log("Hi! I'm " + i + ", and I'm from " + guestList[i] + ".");
+//             break;
+//             };
+//         };
+//     }
+// else {
+//     console.log("Hi! I'm a guest.");
+//     };
+
+// Exercise 5
+//     let Family = {
+//         randy: "Mother",
+//         karla: "Father",
+//         wendy: "Sister",
+//         norman: "Cousin",
+//         sam: "Grandchild"
+//       }
+// for (let x in Family) {
+//     console.log(x)
+// }
+
+// for (let x in Family) {
+//     console.log(Family[x])
+// }
+
+// Exercise 6
+
+// let details = {
+//     my: 'name',
+//     is: 'Rudolf',
+//     the: 'raindeer'
+//   }
+// var Str = "";
+//   for (let i in details) {
+//     Str = Str + i + " " + details[i] + " ";
+//   }
+//   console.log(Str);
+
+// Exercise 7
+
+// let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+// names.sort();
+// var Name = " ";
+// for (let i in names) {
+//     Name = Name + names[i][0];
+// }
+// console.log(Name);
+// names.sort()
