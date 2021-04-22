@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="daily3.css" href="">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="choose">Would you prefer a banana or cherry?</label>
+        <input id="choose" name="i_like">
+        <button>Submit</button>
+      </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_DC_DAY4</title>
+</head>
+<body>
+    <p>
+        ENTER ONLY LETTERS
+        <input type="text" id="onlyLetter">
+    </p>
+    <script>
+        let onlyLetter = document.getElementById("onlyLetter");
+
+        document.addEventListener('keyup', logKey);
+        
+        function logKey() {
+            console.log(onlyLetter.value);
+            onlyLetter.value = onlyLetter.value.replace(/[^A-Za-z]/,'');
+        }
+    </script>
+</body>
+</html>
