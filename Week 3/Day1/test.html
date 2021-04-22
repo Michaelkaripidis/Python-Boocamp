@@ -1,0 +1,93 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="navBar">
+    <ul id="my_ul">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My Friends</a></li>
+        <li><a href="#">Messenger</a></li>
+        <li><a href="#">My Pics</a></li>
+    </ul>
+</div>
+</body>
+<script>
+  
+  let a = document.getElementById("navBar");
+  a.setAttribute('socialNetworkNavigation', 'socialNetworkNavigation');
+  let b = document.createElement("li");
+  document.getElementById("my_ul").appendChild(b);
+  let c = document.createTextNode("Logout");
+  b.appendChild(c);
+
+</script>
+</html> -->
+
+<!-- Exercise 2 -->
+<!-- <html> 
+<body>
+  <div id="container">Users:</div>
+  <ul class="list">
+    <li class="buddyname">John</li>
+    <li>Pete</li>
+  </ul>
+  <ul class="list">
+    <li class="buddyname2">David</li>
+    <li id="deleted">Sarah</li>
+    <li>Dan</li>
+  </ul>
+  <script>
+  document.getElementsByClassName('buddyname')[0].innerHTML = "Michael";
+  document.getElementsByClassName("buddyname2")[0].innerHTML = "Michael";
+  let a = document.createElement("li");
+  document.getElementsByClassName("list")[0].appendChild(a);
+  let b = document.createTextNode("Hey Students!");
+  a.appendChild(b)
+  let c = document.createElement("li");
+  document.getElementsByClassName("list")[1].appendChild(c);
+  let d = document.createTextNode("Hey Students!");
+  c.appendChild(d)
+
+  let j = document.getElementById("deleted");
+  j.removeChild(j.childNodes[0]);
+  </script>
+</body>
+</html> -->
+
+<!-- Exercise 3 -->
+
+<html>
+  <style>
+#container {
+  background-color:lightblue;
+}
+#poc {
+  border:"1px solid black"
+}
+
+  </style>
+<body id="full">
+  <div id="container">Users:</div>
+  <ul>
+    <li id="deleted">John</li>
+    <li id="poc">Pete</li>
+  </ul>
+  <script>
+    let a = document.getElementById("deleted")
+    a.removeChild(a.childNodes[0]);
+    document.getElementById('poc').style.border = "thick solid #0000FF";
+    document.getElementById("full").style.fontSize = "x-large";
+    if (document.getElementById("container").style.backgroundColor == "lightblue") {
+      alert('Hello x and y');
+    } 
+  </script>
+</body>
+</html>
+
