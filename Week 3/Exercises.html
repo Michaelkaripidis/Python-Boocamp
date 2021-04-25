@@ -1,0 +1,72 @@
+<!-- <html>
+​
+<body>
+    <div id="container">Users:</div>
+    <ul class="list">
+        <li>John</li>
+        <li>Pete</li>
+    </ul>
+    <ul class="list">
+        <li>Sarah</li>
+        <li>Dan</li>
+    </ul>
+    <script>
+        
+        //1. The div node => to check go to console and type "div"
+        let div = document.querySelector('#container');
+​
+        // return an array containing both ul's
+        let list = document.getElementsByTagName('ul');
+​
+        // return the item with the class list
+        // .children returns an array of the items
+        let list_1_children = document.getElementsByClassName('list')[0].children;
+        let list_2_children = document.getElementsByClassName('list')[1].children;
+        
+        // 2. The ul nodes, and render all of it's children one by one
+        // return the li element
+        console.log(list_1_children[0])
+        console.log(list_1_children[1])
+        // return the li element value (innerHTML)
+        console.log(list_2_children[0].innerHTML)
+        console.log(list_2_children[1].innerHTML)
+        
+        
+        // 3. The first li of each ul
+        for (i = 0; i < list.length; i++) {
+            let child = list[i].firstElementChild;
+            child.style.backgroundColor = "red";
+            console.log();
+        }
+        
+    </script>
+</body>
+​
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blabla</title>
+</head>
+<body>
+    <div id="navBar">
+        <ul class ='list'>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Friends</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">My Pics</a></li>
+        </ul>
+    </div>
+    <script>
+    let nav = document.getElementById('navBar');
+    nav.setAttribute("socialNetworkNavigation", "navBar");
+let ulst = document.getElementById('list');
+ulst.createElement('list')
+    </script>
+</body>
+</html>

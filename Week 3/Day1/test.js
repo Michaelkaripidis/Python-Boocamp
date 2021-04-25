@@ -27,16 +27,16 @@
 
   //   let firstBoroda = document.getElementById("boroda");
     //   console.log(firstBoroda);
-    let secondBoroda = document.getElementsByClassName("boroda2");
-    console.log(secondBoroda)
-    let unorderedList = document.getElementsByTagName('boroda3');
-    console.log(unorderedList);
-    let testQuery = document.querySelector('#boroda3');
-    console.log(testQuery)
+    // let secondBoroda = document.getElementsByClassName("boroda2");
+    // console.log(secondBoroda)
+    // let unorderedList = document.getElementsByTagName('boroda3');
+    // console.log(unorderedList);
+    // let testQuery = document.querySelector('#boroda3');
+    // console.log(testQuery)
 
-    function myFucntion() {
-      var node = document.createElement("LI");
-      var textnode = document.createTextNode("Pete");
-      node.appendChild(textnode);
-      document.getElementById("boroda3").appendChild(node)
-    }
+    // function myFucntion() {
+    //   var node = document.createElement("LI");
+    //   var textnode = document.createTextNode("Pete");
+    //   node.appendChild(textnode);
+    //   document.getElementById("boroda3").appendChild(node)
+    // }

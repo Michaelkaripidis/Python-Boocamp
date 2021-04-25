@@ -1,0 +1,152 @@
+<!-- <div onclick="alert('Holla Muy Mi Amore !')">
+<button id="jsstyle">Style</button>
+</div>
+<script>
+    let btn = document.getElementById('jssstyle');
+    btn.addEventListener("click", alertLila, true);
+
+    function alertLila() {
+
+
+        
+        alert('TESTT BUTTON LILA')
+    }
+</script> -->
+
+
+
+<!-- <form>
+    <input type="button" name="test" value="Click me" onclick="inform()">
+</form>
+
+<script>
+    function inform(){
+        alert("You clicked me")
+    }
+</script> -->
+<!-- <form>
+    <input id="button" type="button" name="test" value="Click me">
+</form>
+
+<script>
+   document.getElementById('button').onclick = function() {
+        alert('Click!');
+    };
+</script> -->
+<!-- 
+Exercise 1 -->
+
+
+<!-- function insert_Row() {
+    var table = document.getElementById("sampleTable")
+    var row = table.insertRow();
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = "NEW CELL1";
+    cell2.innerHTML = "NEW CELL2";
+} (edited)  -->
+
+<!-- <html>
+<body>
+    <table id=table1 border=“1”>
+        <thead>
+            <tr>
+                <td>Test</td>
+                <td>Test2</td>
+            </tr>
+        </thead>
+        <tbody id=“sampleTable”>
+            <tr id=my_tr>
+                <td>Row1 cell1</td>
+                <td>Row1 cell2</td>
+            </tr>
+            <tr>
+                <td>Row2 cell1</td>
+                <td>Row2 cell2</td>
+            </tr>
+        </tbody>
+    </table>
+    <input type=“button” onclick=“insert_Row()” value=“Insert row”>
+    <input type=“button” onclick=“insert_TD()” value=“Insert TD”>
+    <script>
+        let table = document.getElementById(‘sampleTable’);
+        function insert_Row() {
+            var table = document.getElementById(“sampleTable”);
+            // Create an empty <tr> element and add it to the 1st position of the table:
+            var row = table.insertRow();
+            // Insert new cells (<td> elements) at the 1st and 2nd position of the “new” <tr> element:
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            // Add some text to the new cells:
+            cell1.innerHTML = “NEW CELL1”;
+            cell3.innerHTML = “NEW CELL3";
+            cell2.innerHTML = “NEW CELL2”;
+        }
+        //function insert_Row() {
+          //  let row = table.children.length;
+            //let tr = document.createElement(‘tr’);
+            //tr.innerHTML = `<td>Row${row+1} cell1</td><td>Row${row+1} cell2</td>`;
+            //table.append(tr);
+        //}
+        function insert_TD() {
+            // let row = table.children.length;
+            let tr1 = document.getElementById(‘my_tr’);
+            let td = document.createElement(‘td’);
+            td.innerHTML = `Test TD`;
+            tr1.append(td);
+        }
+    </script>
+</body>
+</html> -->
+​
+<html>
+​
+<body>
+​
+    <style>
+        div {
+            border: 2px solid blue
+        }
+​
+        button {
+            border: 2px solid red
+        }
+    </style>
+​
+    <section id="section" style="height: 50px;">
+        <div id="div" >
+            <button id="btn">Click me</button>
+        </div>
+    </section>
+    <script>
+        let btn = document.getElementById("btn")
+        let div = document.getElementById("div")
+        let section = document.getElementById("section")
+​
+        btn.addEventListener("click", XRespondClick, true);
+        div.addEventListener("click", YRespondClick, true);
+        section.addEventListener("click", ZRespondClick, true);
+​
+        function XRespondClick(e) {
+            alert("BTN is Clicked")
+        }
+​
+        function YRespondClick(e) {
+            alert("DIV is Clicked")
+        }
+​
+        function ZRespondClick(e) {
+            alert("SECTION is Clicked")
+        }
+​
+        //Result if I click on the button
+        // Alert : BTN is Clicked
+        // Alert : DIV is Clicked
+        // Alert : SECTION is Clicked
+        //  The event is triggered from the element that its clicked to the top
+    </script>
+​
+</body>
+​
+</html>
