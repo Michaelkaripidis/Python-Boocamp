@@ -1,10 +1,10 @@
 */ шрифты
 html,h1,h2,h3,h4,h5,h6,a{ font-family: "Raleway";  }
 
-.navbar{ background:#F97300;}
+.navbar{ background:#4477b6f6;}
 .nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
 .nav-link{ margin-right: 1em !important;}
-.nav-link:hover{ background: #f4f4f4; color: #f97300; }
+.nav-link:hover{ background: #f4f4f4; color: black; }
 .navbar-collapse{ justify-content: flex-end;}
 .navbar-toggler{  background:#fff !important;}
 .bg-dark{ background-color:#343a40!important }
@@ -12,7 +12,7 @@ html,h1,h2,h3,h4,h5,h6,a{ font-family: "Raleway";  }
 
 /*Стиль хедера*/
 .header{
-    background-image: url("../images/headerback.jpg");
+    background-image: url("../images/pythonheader.jpeg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -34,10 +34,10 @@ html,h1,h2,h3,h4,h5,h6,a{ font-family: "Raleway";  }
 }
 
 .description h1{
- color:#f94f00 ;
+ color:whitesmoke;
 }
 .description p{
- color:#666;
+ color:whitesmoke;
  font-size: 20px;
  width: 100%;
  line-height: 1.5;
@@ -53,15 +53,16 @@ html,h1,h2,h3,h4,h5,h6,a{ font-family: "Raleway";  }
     padding: 1em;
     position: relative;
    }
-   .about h1{
-    color:#F97300;
+   .about h5{
+    color:rgb(35, 134, 105);
     margin: 2em;
    }
    .about img{
     height: 100%;
        width: 100%;
-       border-radius: 50%
+       border-radius: 50%;
    }
+
    .about span{
     display: block;
     color: #888;
@@ -131,17 +132,21 @@ html,h1,h2,h3,h4,h5,h6,a{ font-family: "Raleway";  }
    }
    .contact-form h1{
     padding:2em 1px;
-    color: #F97300; 
+    color:#4477b6f6; 
    }
    .contact-form .right{
     max-width: 600px;
    }
    .contact-form .right .btn-secondary{
-    background:  #F97300;
+    background: #4477b6f6;
     color: #fff;
     border:0;
    }
    .contact-form .right .form-control::placeholder{
     color: #888;
     font-size: 16px;
+   }
+
+   .card-text2{
+       color:blueviolet;
    }
