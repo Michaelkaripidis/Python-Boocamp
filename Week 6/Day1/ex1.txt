@@ -1,0 +1,92 @@
+-- Database: exercised1
+
+-- DROP DATABASE exercised1;
+
+--CREATE DATABASE exercised1
+    --WITH 
+    --OWNER = anymacstore
+    --ENCODING = 'UTF8'
+    --LC_COLLATE = 'C'
+    --LC_CTYPE = 'C'
+    --TABLESPACE = pg_default
+    --CONNECTION LIMIT = -1;
+	
+	--CREATE TABLE item(
+ --items_id SERIAL PRIMARY KEY,
+ --items_name VARCHAR (50) NOT NULL,
+ --items_price SMALLINT NOT NULL
+--)
+-- CREATE TABLE customers(
+-- customers_id SERIAL PRIMARY KEY,
+-- first_name VARCHAR (50) NOT NULL,
+-- last_name VARCHAR (100) NOT NULL
+--)
+--INSERT INTO item (items_name, items_price)
+--VALUES
+	--('Small Desk', 100),
+	--('Large desk', 300),
+	--('Fan', 80)
+
+ --select * from customers;
+--INSERT INTO customers (first_name, last_name)
+--VALUES
+	--('Greg', 'Jones'),
+	--('Barbara', 'Jones'),
+	--('Scott', 'Scott'),
+	--('Trevor', 'Green'),
+	--('Melanie', 'Johnson')
+--SELECT items_name, items_price FROM item;
+--SELECT items_name FROM item WHERE items_price > 80;
+--select items_name FROM item WHERE items_price < 300;
+--select * from customers where last_name = 'Smith'
+--select * from customers where last_name = 'Jones'
+--select * from customers where last_name != 'Scott'
+
+Exercise 2 XP
+-- Database: students
+
+-- DROP DATABASE students;
+
+--CREATE DATABASE students
+    --WITH 
+    --OWNER = anymacstore
+    --ENCODING = 'UTF8'
+    --LC_COLLATE = 'C'
+    --LC_CTYPE = 'C'
+    --TABLESPACE = pg_default
+    --CONNECTION LIMIT = -1;
+
+--CREATE TABLE pupils(
+ --pupils_id SERIAL PRIMARY KEY,
+ --first_name VARCHAR (50) NOT NULL,
+ --last_name VARCHAR (100) NOT NULL,
+ --birth_date DATE NOT NULL
+--)
+--select * from pupils;
+
+--insert into pupils (first_name, last_name, birth_date)
+--values
+	--('Marc','Benichou','1998_02_11'),
+	--('Yoan','Cohen','2010_12_03'),
+	--('Amelia', 'Dux', '1996_07_04'),
+	--('Lea', 'Benichou', '1978_07_27'),
+	--('David', 'Grez', '2003_06_14'),
+	--('Omer', 'Simpson', '1980_10_03')
+--insert into pupils (first_name, last_name, birth_date)
+--values('Michael', 'Karibov', '1995_09_24')
+--select first_name, last_name from pupils
+--select first_name, last_name
+--select first_name, last_name from pupils where pupils_id = 2;
+--select first_name, last_name from pupils where last_name = 'Benichou' and first_name = 'Marc'
+--select first_name, last_name from pupils where last_name = 'Benichou' or first_name = 'Marc'
+--SELECT first_name FROM actors WHERE last_name LIKE
+--select first_name from pupils where last_name LIKE '%a'
+--select first_name from pupils where last_name LIKE '%a%'
+--select first_name from pupils where last_name LIKE 'a%'
+--select first_name from pupils where last_name LIKE '%a_'
+--select first_name, last_name from pupils where pupils_id = 3 or pupils_id = 1;
+--select * from pupils where birth_date >= '2000_01_1'
+-- Daily Challenge 
+-- select count(actors_id)
+-- from actors
+-- If i am adding empty blank i will see NULL in my table, to select it i need to use 

@@ -91,3 +91,55 @@
 # for x in range(1500,2500):
 #     if x % 5 == 0 or x % 7 == 0:
 #         print(x)
+# Exercise 9
+
+# favorite_fruits = input('Please enter your favorite fruit and separate them with white space: ')
+# print(favorite_fruits.split())
+# new_fruits = input("Choose new fruit!")
+# if new_fruits in favorite_fruits:
+#     print("You chose one of your favorite fruits!")
+# else:
+#     print("You chose other fruit enjoy!")
+# Exercise 10
+
+# while True:
+#     topping = input("введите еще добавку: ")
+#     if topping != "quit":
+#         toppings.append(topping)
+#     else:
+#         break
+
+# print(toppings)
+# print("Ваша пицца стоит:", 10 + 2.5 * len(toppings))
+
+# Exercise 11
+# sum_family = 0
+# while True:
+#     age = input("Enter age of member of your family from 1 to 100, or 0 to end session: ")
+#     if not age.isdigit():
+#         print("Incorrect answer")
+#         break
+#     else:
+#         age = int(age)
+#
+#     if age > 12:
+#         sum_family = sum_family + 15
+#     elif age > 3:
+#         sum_family = sum_family + 10
+#     elif age == 0:
+#         break
+#     else:
+#         print("You dont need to pay for a baby")
+#         continue
+# print(f"Total summ: {sum_family}")
+
+# Exercise 12
+# name_list = ['Michael', 'Marat', 'Masha', 'Anastasia', 'Kassandra']
+# temp_list = name_list.copy()
+# for name in temp_list:
+#     age = int(input("How old are you?: "))
+#     if age < 16:
+#         name_list.remove(name)
+
+# print(name_list)
+

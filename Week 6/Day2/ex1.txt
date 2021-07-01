@@ -1,0 +1,127 @@
+-- Exercise 1
+-- 1. SELECT * FROM item ORDER BY items_price ASC;
+-- SELECT items_name FROM item ORDER BY items_price > 80 ASC;
+-- SELECT  first_name, last_name FROM customers ORDER BY first_name ASC
+--FETCH FIRST 3 ROWS ONLY
+--SELECT last_name FROM customers ORDER BY first_name DESC;
+--2.CREATE TABLE purchases(
+--purchases_id SERIAL,
+--customers_id INT NOT NULL,
+--items_id INT NOT NULL,
+--PRIMARY KEY (purchases_id),
+--FOREIGN KEY (customers_id) REFERENCES customers(customers_id),
+--FOREIGN KEY (items_id) REFERENCES item (items_id)
+--)
+-- INSERT INTO purchases(purchases_id,customers_id)
+-- VALUES
+    -- (1,2),
+    -- (2,3)
+    -- It will be error, we cant have NULL row.
+3. 1. SELECT * FROM purchases; it is not useful for us..
+2. SELECT purchases.purchases_id, customers.customers_id, customers.last_name
+FROM purchases
+INNER JOIN customers
+ON purchases.customers_id = customers.customers_id
+
+3.SELECT purchases.purchases_id, customers.customers_id, customers.last_name
+FROM purchases
+INNER JOIN customers
+ON purchases.customers_id = customers.customers_id
+WHERE customers.customers_id = 4;
+4.SELECT purchases.purchases_id, customers.customers_id, customers.last_name, items.name
+FROM purchases
+INNER JOIN customers
+ON purchases.customers_id = customers.customers_id
+INNER JOIN items
+ON
+puschases.items_id = items.items_id;
+
+5.SELECT purchases.purchases_id, customers.customers_id, customers.last_name, item.items_name
+FROM purchases
+INNER JOIN customers
+ON purchases.customers_id = customers.customers_id
+INNER JOIN item
+ON
+purchases.items_id = item.items_id
+WHERE (item.items_name = 'Small Desk' OR item.items_name = 'Large desk') 
+
+INSERT INTO purchases (customers_id, items_id)
+VALUES((SELECT customers_id FROM customers WHERE (first_name = 'Scott' AND last_name = 'Scott')),(SELECT items_id FROM item WHERE items_name = 'Hard drive'))
+
+SELECT purchases.customers_id, purchases.items_id, customers.first_name, customers.last_name, item.items_name
+FROM purchases
+INNER JOIN customers
+ON purchases.customers_id = customers.customers_id
+INNER JOIN item
+ON
+purchases.items_id = item.items_id
+ORDER BY customers.last_name
+
+Exercise 2
+1.select * from customer;
+2.select concat(first_name , ' ', last_name) AS full_name from customer
+3.select  distinct create_date from customer
+4.select * from customer order by first_name DESC
+5.select film_id, title, description, release_year from film order by rental_rate ASC
+6.select address, phone from address where address.district = 'Texas'
+7.select * from film where film_id = 15 OR film_id = 150
+8.select  film_id, title, description, rental_rate from film where film.title = 'Lord of the rings'
+9.select  film_id, title, description, length, rental_rate from film where film.title like 'Lo%'
+10. select * from film order by replacement_cost ASC Limit 10 
+11.select * from(select * from film order by replacement_cost ASC Limit 20)AS bla order by replacement_cost DESC Limit 10
+12.select amount, payment_date from payment inner join customer on customer.customer_id = payment.customer_id order by customer.customer_id ASC
+13. select title from film inner join inventory on film.film_id = inventory.film_id 
+14. select * from  city inner join country on country.country_id = country.country_id
+15. Bonus: select amount, payment_date, customer.first_name, customer.last_name, customer.customer_id from payment inner join  customer on customer.customer_id = payment.customer_id
+inner join staff on staff.staff_id = payment.staff_id order by payment.staff_id
+
+Daily challenge
+CREATE TABLE FirstTab (
+     id integer, 
+     name VARCHAR(10)
+)
+
+INSERT INTO FirstTab VALUES
+(5,'Pawan'),
+(6,'Sharlee'),
+(7,'Krish'),
+(NULL,'Avtaar')
+
+SELECT * FROM FirstTab
+
+CREATE TABLE SecondTab (
+    id integer 
+)
+
+INSERT INTO SecondTab VALUES
+(5),
+(NULL)
+
+
+SELECT * FROM SecondTab
+
+1. SELECT COUNT(*) FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id IS NULL )
+Output =  0, IS NUll returning boolean, first select select nothing
+2.     SELECT COUNT(*) FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id = 5 )
+Output = 2
+3. SELECT COUNT(*) FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab )
+Output = 0 ,
+4.
+
+Ex
+1.select name from language
+2.select title, description, language.name from film inner join language on language.language_id = film.language_id
+4. create table customer_review(
+	review_id serial primary key,
+	film_id int not null references new_film (new_id) on delete cascade on update cascade,
+	language_id int not null references language (language_id),
+	title varchar(50) not null,
+	score int check (score > 0 and score <= 10),
+	review_text text,
+	last_update date
+) 
+5.insert into customer_review(film_id, language_id, title, score, review_text, last_update)
+values 
+	(3, 1, 'Alibaba', 9, 'BEST ALIBABA!', '2021_01_01'),
+	(2, 2, 'Nastenka', 8, 'WOOOF', '2020_02_03')
+6. delete from new_film where new_id = 2ы
